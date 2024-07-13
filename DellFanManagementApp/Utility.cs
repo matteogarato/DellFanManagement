@@ -9,7 +9,7 @@ namespace DellFanManagement.App
     /// <summary>
     /// A collection of various methods used in multiple places throughout the application.
     /// </summary>
-    static class Utility
+    internal static class Utility
     {
         /// <summary>
         /// Get a list of audio devices in the system.

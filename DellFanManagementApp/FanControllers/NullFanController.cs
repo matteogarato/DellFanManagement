@@ -3,7 +3,7 @@
     /// <summary>
     /// This fan controller can't actually control the fans.
     /// </summary>
-    class NullFanController : FanController
+    internal class NullFanController : FanController
     {
         /// <summary>
         /// Constructor.

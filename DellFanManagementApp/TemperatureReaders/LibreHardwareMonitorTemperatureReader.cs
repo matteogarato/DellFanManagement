@@ -7,7 +7,7 @@ namespace DellFanManagement.App.TemperatureReaders
     /// <summary>
     /// Handles reading temperatures from Libre Hardware Monitor.
     /// </summary>
-    abstract class LibreHardwareMonitorTemperatureReader : TemperatureReader, IDisposable
+    internal abstract class LibreHardwareMonitorTemperatureReader : TemperatureReader, IDisposable
     {
         /// <summary>
         /// Libre Hardware Monitor computer object.

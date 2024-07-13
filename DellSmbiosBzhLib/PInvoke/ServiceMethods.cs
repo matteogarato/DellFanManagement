@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 
 namespace DellFanManagement.DellSmbiozBzhLib.PInvoke
 {
-    static class ServiceMethods
+    internal static class ServiceMethods
     {
         /// <summary>
         /// Closes an open object handle.

@@ -5,7 +5,7 @@ namespace DellFanManagement.App.TemperatureReaders
     /// <summary>
     /// Handles reading system CPU temperatures.
     /// </summary>
-    class CpuTemperatureReader : LibreHardwareMonitorTemperatureReader
+    internal class CpuTemperatureReader : LibreHardwareMonitorTemperatureReader
     {
         /// <summary>
         /// Constructor.  Initialize the computer object for reading the CPU temperature.

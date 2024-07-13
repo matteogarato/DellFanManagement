@@ -183,6 +183,6 @@ namespace DellFanManagement.App.ConsistencyModeHandlers
         /// <returns>The return value is the thread identifier of the calling thread.</returns>
         /// <see cref="https://docs.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentthreadid"/>
         [DllImport("kernel32.dll")]
-        static extern uint GetCurrentThreadId();
+        private static extern uint GetCurrentThreadId();
     }
 }

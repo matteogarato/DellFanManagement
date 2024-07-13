@@ -3,7 +3,7 @@
     /// <summary>
     /// Determine system capabilities and select an appropriate fan speed controller to use.
     /// </summary>
-    class FanControllerFactory
+    internal class FanControllerFactory
     {
         /// <summary>
         /// Selects a fan speed reader and returns it.

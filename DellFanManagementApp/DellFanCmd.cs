@@ -7,7 +7,7 @@ namespace DellFanManagement.App
     /// <summary>
     /// Single class which contains the entire program.
     /// </summary>
-    static class DellFanCmd
+    internal static class DellFanCmd
     {
         /// <summary>
         /// Code for the old DellFanCmd program; called for remaining command line parameters.
@@ -382,12 +382,12 @@ namespace DellFanManagement.App
                             Thread.Sleep(sleepInterval);
                             rpmLevel0Fan1 = DellSmbiosBzh.GetFanRpm(BzhFanIndex.Fan1);
 
-                            Console.WriteLine("Measuring: Fan 1, level 1..."); 
+                            Console.WriteLine("Measuring: Fan 1, level 1...");
                             DellSmbiosBzh.SetFanLevel(BzhFanIndex.Fan1, BzhFanLevel.Level1);
                             Thread.Sleep(sleepInterval);
                             rpmLevel1Fan1 = DellSmbiosBzh.GetFanRpm(BzhFanIndex.Fan1);
 
-                            Console.WriteLine("Measuring: Fan 1, level 2..."); 
+                            Console.WriteLine("Measuring: Fan 1, level 2...");
                             DellSmbiosBzh.SetFanLevel(BzhFanIndex.Fan1, BzhFanLevel.Level2);
                             Thread.Sleep(sleepInterval);
                             rpmLevel2Fan1 = DellSmbiosBzh.GetFanRpm(BzhFanIndex.Fan1);
@@ -400,12 +400,12 @@ namespace DellFanManagement.App
                                 Console.WriteLine("Measuring: Fan 2, level 0...");
                                 rpmLevel0Fan2 = DellSmbiosBzh.GetFanRpm(BzhFanIndex.Fan2);
 
-                                Console.WriteLine("Measuring: Fan 2, level 1..."); 
+                                Console.WriteLine("Measuring: Fan 2, level 1...");
                                 DellSmbiosBzh.SetFanLevel(BzhFanIndex.Fan2, BzhFanLevel.Level1);
                                 Thread.Sleep(sleepInterval);
                                 rpmLevel1Fan2 = DellSmbiosBzh.GetFanRpm(BzhFanIndex.Fan2);
 
-                                Console.WriteLine("Measuring: Fan 2, level 2..."); 
+                                Console.WriteLine("Measuring: Fan 2, level 2...");
                                 DellSmbiosBzh.SetFanLevel(BzhFanIndex.Fan2, BzhFanLevel.Level2);
                                 Thread.Sleep(sleepInterval);
                                 rpmLevel2Fan2 = DellSmbiosBzh.GetFanRpm(BzhFanIndex.Fan2);

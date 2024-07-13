@@ -132,15 +132,19 @@ namespace DellFanManagement.DellSmbiosSmiLib
                 case SmiFanLevel.Off:
                     token = Token.FanSpeedMediumHigh;
                     break;
+
                 case SmiFanLevel.Low:
                     token = Token.FanSpeedMedium;
                     break;
+
                 case SmiFanLevel.Medium:
                     token = Token.FanSpeedHigh;
                     break;
+
                 case SmiFanLevel.High:
                     token = Token.FanSpeedLow;
                     break;
+
                 default:
                     return false;
             }

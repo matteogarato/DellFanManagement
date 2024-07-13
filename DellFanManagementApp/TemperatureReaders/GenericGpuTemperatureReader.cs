@@ -2,7 +2,7 @@
 
 namespace DellFanManagement.App.TemperatureReaders
 {
-    class GenericGpuTemperatureReader : LibreHardwareMonitorTemperatureReader
+    internal class GenericGpuTemperatureReader : LibreHardwareMonitorTemperatureReader
     {
         /// <summary>
         /// Constructor.  Initialize the computer object for reading the CPU temperature.

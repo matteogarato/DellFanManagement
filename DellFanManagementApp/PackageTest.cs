@@ -1,5 +1,5 @@
-﻿using DellFanManagement.DellSmbiozBzhLib;
-using DellFanManagement.DellSmbiosSmiLib;
+﻿using DellFanManagement.DellSmbiosSmiLib;
+using DellFanManagement.DellSmbiozBzhLib;
 using LibreHardwareMonitor.Hardware;
 using NvAPIWrapper.GPU;
 using NvAPIWrapper.Native.Exceptions;
@@ -11,7 +11,7 @@ namespace DellFanManagement.App
     /// The purpose of this class is to test each of the packages for basic compatibility with the selected .NET
     /// version.
     /// </summary>
-    static class PackageTest
+    internal static class PackageTest
     {
         /// <summary>
         /// Run the package tests.

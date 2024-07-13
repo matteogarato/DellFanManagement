@@ -5,7 +5,7 @@ namespace DellFanManagement.App.FanControllers
     /// <summary>
     /// Allows fan speed control using the WMI/SMI interface.
     /// </summary>
-    class SmiFanController : FanController
+    internal class SmiFanController : FanController
     {
         /// <summary>
         /// Constructor.
@@ -55,12 +55,15 @@ namespace DellFanManagement.App.FanControllers
                 case FanLevel.Off:
                     smiLevel = SmiFanLevel.Off;
                     break;
+
                 case FanLevel.Medium:
                     smiLevel = SmiFanLevel.Low;
                     break;
+
                 case FanLevel.High:
                     smiLevel = SmiFanLevel.High;
                     break;
+
                 default:
                     return false;
             }

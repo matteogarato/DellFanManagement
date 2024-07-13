@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace DellFanManagement.App
 {
-    static class DellFanManagementApp
+    internal static class DellFanManagementApp
     {
         /// <summary>
         /// Version number for the entire package.
@@ -18,7 +18,7 @@ namespace DellFanManagement.App
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static int Main(string[] args)
+        private static int Main(string[] args)
         {
             if (args.Length == 0)
             {

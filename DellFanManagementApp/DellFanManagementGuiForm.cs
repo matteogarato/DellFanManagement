@@ -234,6 +234,7 @@ namespace DellFanManagement.App
                         operationModeRadioButtonAutomatic.Checked = true;
                         modeSet = true;
                         break;
+
                     case OperationMode.Manual:
                         if (operationModeRadioButtonManual.Enabled)
                         {
@@ -241,6 +242,7 @@ namespace DellFanManagement.App
                             modeSet = true;
                         }
                         break;
+
                     case OperationMode.Consistency:
                         if (operationModeRadioButtonConsistency.Enabled)
                         {
@@ -306,9 +308,11 @@ namespace DellFanManagement.App
                             case FanLevel.Off:
                                 manualFan1RadioButtonOff.Checked = true;
                                 break;
+
                             case FanLevel.Medium:
                                 manualFan1RadioButtonMedium.Checked = true;
                                 break;
+
                             case FanLevel.High:
                                 manualFan1RadioButtonHigh.Checked = true;
                                 break;
@@ -322,9 +326,11 @@ namespace DellFanManagement.App
                             case FanLevel.Off:
                                 manualFan2RadioButtonOff.Checked = true;
                                 break;
+
                             case FanLevel.Medium:
                                 manualFan2RadioButtonMedium.Checked = true;
                                 break;
+
                             case FanLevel.High:
                                 manualFan2RadioButtonHigh.Checked = true;
                                 break;
@@ -443,18 +449,22 @@ namespace DellFanManagement.App
                         SetThermalSettingAvaiability(true);
                         thermalSettingRadioButtonOptimized.Checked = true;
                         break;
+
                     case ThermalSetting.Cool:
                         SetThermalSettingAvaiability(true);
                         thermalSettingRadioButtonCool.Checked = true;
                         break;
+
                     case ThermalSetting.Quiet:
                         SetThermalSettingAvaiability(true);
                         thermalSettingRadioButtonQuiet.Checked = true;
                         break;
+
                     case ThermalSetting.Performance:
                         SetThermalSettingAvaiability(true);
                         thermalSettingRadioButtonPerformance.Checked = true;
                         break;
+
                     case ThermalSetting.Error:
                         SetThermalSettingAvaiability(false);
                         break;
@@ -549,7 +559,7 @@ namespace DellFanManagement.App
                         ThermalSetting? thermalSettingOverride = _configurationStore.GetThermalSettingOverride((Guid)_state.ActivePowerProfile);
                         if (thermalSettingOverride != null)
                         {
-                            _core.RequestThermalSetting((ThermalSetting) thermalSettingOverride);
+                            _core.RequestThermalSetting((ThermalSetting)thermalSettingOverride);
                             Log.Write(string.Format("Thermal setting override: {0}", thermalSettingOverride));
                         }
 

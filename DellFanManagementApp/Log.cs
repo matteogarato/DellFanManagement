@@ -2,7 +2,7 @@
 
 namespace DellFanManagement.App
 {
-    static class Log
+    internal static class Log
     {
         /// <summary>
         /// Write a message to the log.

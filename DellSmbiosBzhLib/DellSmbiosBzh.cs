@@ -216,7 +216,7 @@ namespace DellFanManagement.DellSmbiozBzhLib
                 IntPtr serviceConfigurationPtr = Marshal.AllocHGlobal(bytesNeeded);
 
                 result = ServiceMethods.QueryServiceConfig(serviceHandle, serviceConfigurationPtr, bytesNeeded, out _);
-                QueryServiceConfig serviceConfiguration = (QueryServiceConfig) Marshal.PtrToStructure(serviceConfigurationPtr, typeof(QueryServiceConfig));
+                QueryServiceConfig serviceConfiguration = (QueryServiceConfig)Marshal.PtrToStructure(serviceConfigurationPtr, typeof(QueryServiceConfig));
 
                 if (!result)
                 {

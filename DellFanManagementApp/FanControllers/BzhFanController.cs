@@ -5,7 +5,7 @@ namespace DellFanManagement.App.FanControllers
     /// <summary>
     /// Allows fan speed control using the BZH SMM I/O driver.
     /// </summary>
-    class BzhFanController : FanController
+    internal class BzhFanController : FanController
     {
         /// <summary>
         /// Constructor.
@@ -82,12 +82,15 @@ namespace DellFanManagement.App.FanControllers
                     case FanLevel.Off:
                         bzhLevel = BzhFanLevel.Level0;
                         break;
+
                     case FanLevel.Medium:
                         bzhLevel = BzhFanLevel.Level1;
                         break;
+
                     case FanLevel.High:
                         bzhLevel = BzhFanLevel.Level2;
                         break;
+
                     default:
                         return false;
                 }

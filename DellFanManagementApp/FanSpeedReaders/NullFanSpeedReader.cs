@@ -3,7 +3,7 @@
     /// <summary>
     /// This fan speed reader can't read the fan speed and always returns null.
     /// </summary>
-    class NullFanSpeedReader : IFanSpeedReader
+    internal class NullFanSpeedReader : IFanSpeedReader
     {
         /// <summary>
         /// Get the current system fan speeds.

@@ -6,7 +6,7 @@ namespace DellFanManagement.App
     /// <summary>
     /// Used to set the thermal setting of the system while running the program from the command line.
     /// </summary>
-    static class SetThermalSetting
+    internal static class SetThermalSetting
     {
         /// <summary>
         /// Set the system thermal setting according to the setting provided on the command line.
@@ -30,15 +30,19 @@ namespace DellFanManagement.App
                 case "optimised":
                     newSetting = ThermalSetting.Optimized;
                     break;
+
                 case "cool":
                     newSetting = ThermalSetting.Cool;
                     break;
+
                 case "quiet":
                     newSetting = ThermalSetting.Quiet;
                     break;
+
                 case "performance":
                     newSetting = ThermalSetting.Performance;
                     break;
+
                 default:
                     DellFanCmd.Usage();
                     return -1;

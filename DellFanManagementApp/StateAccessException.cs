@@ -5,7 +5,7 @@ namespace DellFanManagement.App
     /// <summary>
     /// This exception type is thrown when an attempt is made to modify the state without first calling WaitOne.
     /// </summary>
-    class StateAccessException : Exception
+    internal class StateAccessException : Exception
     {
         /// <summary>
         /// Constructor; pass the message along to the parent object.

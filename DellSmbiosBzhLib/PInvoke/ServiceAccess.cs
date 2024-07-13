@@ -8,7 +8,7 @@
     [System.Flags]
     public enum ServiceAccess : uint
     {
-       /// <summary>
+        /// <summary>
         /// Request all rights to a standard service.
         /// </summary>
         AllAccess = 0xF01FF,

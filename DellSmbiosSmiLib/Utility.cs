@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DellFanManagement.DellSmbiosSmiLib
+﻿namespace DellFanManagement.DellSmbiosSmiLib
 {
     /// <summary>
     /// General helper methods.
     /// </summary>
-    static class Utility
+    internal static class Utility
     {
         /// <summary>
         /// Extract a byte value from a uint.

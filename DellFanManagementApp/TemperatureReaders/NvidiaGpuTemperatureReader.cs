@@ -2,7 +2,6 @@
 using NvAPIWrapper.Native.Exceptions;
 using System;
 using System.Collections.Generic;
-using System.Xml.Linq;
 
 namespace DellFanManagement.App.TemperatureReaders
 {

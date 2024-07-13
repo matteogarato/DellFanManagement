@@ -3,7 +3,7 @@ using System.Management;
 
 namespace DellFanManagement.App.FanSpeedReaders
 {
-    class WmiFanSpeedReader : IFanSpeedReader
+    internal class WmiFanSpeedReader : IFanSpeedReader
     {
         private static readonly ManagementScope Scope = new("root/dcim/sysman");
         private readonly ManagementObjectSearcher FanSensor1Searcher;

@@ -6,7 +6,7 @@ namespace DellFanManagement.App
     /// <summary>
     /// Used to play a sound.
     /// </summary>
-    class SoundPlayer
+    internal class SoundPlayer
     {
         /// <summary>
         /// Indicates that an external request has come in to terminate sound playback.
